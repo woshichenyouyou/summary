@@ -1,0 +1,3 @@
+docker pull rabbitmq:management
+docker run -d --hostname my-rabbit --name cyy-rabbitmq -e RABBITMQ_DEFAULT_USER=xruser -e RABBITMQ_DEFAULT_PASS=xruser -p 15672:15672 -p 5672:5672 rabbitmq:management
+https://www.rabbitmq.com/tutorials/tutorial-five-python.html
