@@ -1,0 +1,8 @@
+	git clone http://10.189.132.88/lyukun/sikulix-work.git
+	docker images
+	docker ps -a
+	docker run -d -t --name sikuli_xray -p 5900:5900  lyukun/ubuntu-sikulix
+	docker exec -it 4e72cef9c573  /bin/bash
+docker hub	https://hub.docker.com
+run script in container	docker exec cyy_sikuli_test  bash -c "cd /scripts/automation/src/testCase/cyytest/  && python3 cyytest.py"
+enter to container	docker exec -it cyy_sikuli_test /bin/bash
